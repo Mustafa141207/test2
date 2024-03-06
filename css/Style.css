@@ -1,0 +1,213 @@
+:root {
+    --mainColor: #FF6525;
+    --secondColor: #3DB3AC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+i {
+    cursor: pointer;
+}
+#mainSection{
+    display: none;
+}
+.second {
+    color: var(--secondColor);
+}
+
+.primary {
+    color: var(--mainColor);
+}
+
+#SignIn {
+    background-color: #FF6525;
+}
+
+#show {
+    background-image: url(../images/show.jfif);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#show .intro {
+    width: 325px;
+    height: 325px;
+    top: 144px;
+    left: 121px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow,
+#help {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--secondColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+.intro .content p {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.home .container .bar {
+    width: 75%;
+}
+
+.home .container .bar button {
+    color: var(--mainColor);
+}
+
+.special {
+    color: var(--mainColor);
+}
+
+.handleImg {
+    height: 550px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#op {
+    background-color: #29C250;
+    color: white;
+
+}
+
+.feed {
+    padding: 10px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.contentfoot p {
+    margin: 5px 0;
+}
+
+.show p {
+    color: var(--mainColor);
+}
+
+
+.move {
+    background-color: var(--mainColor);
+    color: white;
+
+}
+
+#help {
+    background-color: white;
+    color: var(--mainColor);
+    width: 50px;
+    border-radius: 0;
+    height: 40px;
+}
+
+.circle,
+.test {
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#item {
+    background-color: var(--secondColor);
+    color: white;
+}
+
+.value i {
+    font-size: 10px;
+}
+
+.circle i {
+    color: var(--mainColor);
+    padding: 10px;
+}
+
+.test {
+    background-color: #29C250;
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+
+    z-index: 1000;
+}
+
+.moving button {
+    transition: all 0.5s;
+}
+
+@media (max-width :769px) {
+    .test {
+        background-color: #FF6525;
+    }
+
+    /* #show .intro {
+
+     width: 100%;
+     height: 50%;
+     top: 50%;
+     left: 0;
+    } */
+
+    #home .container .bar .moving {
+        flex-direction: column;
+    }
+
+    footer .container .a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .side{
+        flex-direction: row !important;
+        width: 100%;
+    }
+    #xoxo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+}
+@media (max-width :490px){
+    #show .intro {
+        width: 100%;
+        height: 50%;
+        left: 0;
+       }
+
+}
+
+
+/* .bar li button{
+    background-color: aqua;
+    margin: 0 2px;
+} */
